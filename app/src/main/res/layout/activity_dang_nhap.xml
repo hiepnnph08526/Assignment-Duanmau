@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DangNhapActivity"
+    android:background="@drawable/bgapp1"
+    android:animateLayoutChanges="true"
+
+
+    >
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_marginTop="30dp"
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"/>
+        <LinearLayout
+            android:id="@+id/lnLogin"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/imgLogo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="Tài khoản"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:hint="Mật khẩu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:layout_marginTop="10dp"
+               android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu mật khẩu"
+                android:autoLink="none"/>
+
+            <Button
+                android:onClick="login"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lnLogin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/button"
+                android:text="Đăng nhập"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Bạn chưa có tài khoản ?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:onClick="dangki"
+                android:textStyle="bold"
+                android:outlineSpotShadowColor="@color/button"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/button"
+                android:text="Đăng kí tài khoản"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

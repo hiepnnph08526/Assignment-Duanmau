@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DoiMatKhauActivity"
+    android:background="@drawable/bgapp1"
+    android:animateLayoutChanges="true"
+    android:paddingTop="50dp"
+
+    >
+    <RelativeLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="25dp"
+            android:id="@+id/tvLogin"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="ĐỔI MẬT KHẨU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/ln1"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/tvLogin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edTaiKhoan1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="Tài khoản"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edPassnew"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:hint="Mật khẩu mới"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edRePassnew"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:hint="Nhập lại mật mật khẩu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <Button
+            android:onClick="changePassword"
+
+            android:id="@+id/btnDangki"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/ln1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/button"
+            android:text="OK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
