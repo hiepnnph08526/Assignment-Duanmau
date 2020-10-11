@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThemTheLoaiActivity"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:src="@drawable/cateicon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <EditText
+        android:id="@+id/edTenTheLoai"
+        android:hint="Mã thể loại"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edViTri"
+        android:hint="Tên thể loại"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edMoTa"
+        android:hint="Vị trí"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+    android:id="@+id/edMaTheLoai"
+    android:hint="Mô tả"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/themtheloai"
+        android:onClick="themtheloai"
+       android:text="OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>
