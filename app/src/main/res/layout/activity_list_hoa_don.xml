@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".activity.ListHoaDonActivity">
     <EditText
-        android:hint="   Search"
+        android:hint="Search"
         android:id="@+id/edSearch"
         android:drawableLeft="@drawable/smartphone"
         android:layout_margin="15dp"
@@ -14,43 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:maxLines="1" />
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <ListView
+        android:id="@+id/lvHoaDon"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:padding="4dp">
-        <ImageView
-            android:id="@+id/ivIcon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/hdicon"
-            android:scaleType="fitXY" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_toRightOf="@+id/ivIcon"
-            android:orientation="vertical">
-            <TextView
-                android:text="H1"
-                android:id="@+id/tvMaHoaDon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:singleLine="true"
-                android:textStyle="bold" />
-            <TextView
-                android:text="30/09/2020"
-                android:id="@+id/tvNgayMua"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical" />
-        </LinearLayout>
-        <ImageView
-            android:id="@+id/ivDelete"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/delete" />
-    </RelativeLayout>
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>

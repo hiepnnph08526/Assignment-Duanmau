@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SachDetailActivity"></activity>
+        <activity android:name=".activity.ListHDCTByIDActivity"></activity>
+        <activity android:name=".activity.HoaDonDetailActivity" />
+        <activity android:name=".activity.ThemHoaDonActivity" />
+        <activity android:name=".activity.SachDetailActivity" />
         <activity android:name=".activity.ThemSachActivity" />
         <activity android:name=".activity.TheLoaiDetailActivity" />
         <activity android:name=".activity.ThemTheLoaiActivity" />
